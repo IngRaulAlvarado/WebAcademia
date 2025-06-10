@@ -1,0 +1,210 @@
+/* Fuente base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #774545;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f1c40f; /* Fondo dorado para el header */
+  color: black; /* Texto negro en el navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo img {
+  height: 70px; /* Aumentar el tamaño del logo */
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Aumento del espacio entre los enlaces */
+  margin: 0;
+}
+
+.navbar .menu li a {
+  color: black; /* Texto negro para los enlaces */
+  text-decoration: none;
+  font-weight: bold; /* Hacer el texto en negrita */
+  font-size: 1.1rem; /* Aumentar tamaño de fuente */
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: #333; /* Cambiar a gris oscuro cuando se pase el ratón */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra en el texto */
+}
+
+/* Hero Section */
+.hero {
+  background-color: #0c1c3d; /* Fondo azul oscuro */
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3.2rem; /* Aumentar tamaño de título */
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.4rem; /* Aumentar tamaño del párrafo */
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  background-color: #f1c40f;
+  color: #0c1c3d;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #d4ac0d;
+}
+
+/* Diplomados */
+.diplomados {
+  padding: 4rem 2rem;
+  background-color: #f7f7f7;
+}
+
+.diplomados .contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.diplomado {
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.diplomado h3 {
+  color: #0c1c3d;
+  margin-bottom: 1rem;
+}
+
+.diplomado p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Presentación */
+.presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  background-color: #f7f7f7;
+}
+
+.presentacion .contenido {
+  flex: 1;
+  min-width: 300px;
+}
+
+.presentacion h2 {
+  color: #0c1c3d;
+}
+
+.presentacion .logo-presentacion img {
+  max-width: 200px;
+}
+
+/* Opiniones */
+.opiniones {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.opiniones h2 {
+  color: #0c1c3d;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #0c1c3d; /* Azul oscuro para el footer */
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-links,
+.footer-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #f1c40f; /* Dorado al pasar el ratón */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .navbar .menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .diplomados .contenido {
+    padding: 0 1rem;
+  }
+
+  .presentacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem; /* Ajuste tamaño del título en dispositivos móviles */
+  }
+
+  .hero p {
+    font-size: 1.2rem; /* Ajuste tamaño del párrafo en dispositivos móviles */
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    height: 40px;
+  }
+}

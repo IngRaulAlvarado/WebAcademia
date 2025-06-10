@@ -1,0 +1,68 @@
+/* Estilo para la sección de Misión */
+.mision {
+  padding: 4rem 2rem;
+  background-color: #f7f7f7;
+}
+
+.mision .contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mision h2 {
+  color: #0c1c3d;
+  margin-bottom: 1rem;
+}
+
+.mision p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Estilo para el equipo */
+.equipo {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.equipo h2 {
+  color: #0c1c3d;
+  margin-bottom: 2rem;
+}
+
+.equipo-miembros {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.miembro {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.miembro img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.miembro h3 {
+  color: #0c1c3d;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.miembro p {
+  color: #666;
+  font-size: 1rem;
+}
